@@ -1,7 +1,11 @@
 import React from "react";
-
+import Header from "@/components/Header";
 const page = () => {
-  return <div>Welcome to Johnnny Video sharing platform</div>;
+  return (
+    <main className="wrapper page">
+      <Header title="All Videos" subHeader="Public Library" />
+    </main>
+  );
 };
 
 export default page;
