@@ -134,4 +134,28 @@
       @apply py-2.5 px-5 flex items-center gap-2.5 text-sm font-semibold text-white bg-dark-80 rounded-4xl;
     }
   }
+
+  .filter-trigger {
+    @apply flex items-center justify-center px-4 py-2 border border-gray-20 rounded-[28px] gap-3;
+
+    figure {
+      @apply flex items-center gap-1;
+
+      span {
+        @apply text-sm font-semibold text-dark -tracking-[0.8px];
+      }
+    }
+  }
+
+  .dropdown {
+    @apply absolute bg-white shadow-lg rounded-lg flex flex-col gap-2 w-full z-10 top-12;
+
+    .list-item {
+      @apply px-3 py-2.5 text-sm font-medium -tracking-[0.8px] relative text-dark cursor-pointer hover:bg-dark hover:text-white transition-colors duration-200 ease-in-out rounded-md;
+
+      img {
+        @apply absolute right-3 top-1/2 -translate-y-1/2;
+      }
+    }
+  }
 }
