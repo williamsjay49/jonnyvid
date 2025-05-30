@@ -1,8 +1,13 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { authClient } from "@/lib/auth-client";
 
 const page = () => {
+  const handleSignIn = async () => {
+    return await authClient.signIn.social({ provider: "google" });
+  };
   return (
     <main className="sign-in">
       <aside className="testimonial">
@@ -60,7 +65,7 @@ const page = () => {
             />
           </Link>
           <p>Create your very first story with Oren</p>
-          <button>
+          <button onClick={handleSignIn}>
             <Image
               alt="google"
               src="/assets/icons/google.svg"

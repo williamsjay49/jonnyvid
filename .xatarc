@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Johnson-s-workspace-75jl1d.us-east-1.xata.sh/db/Oren",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
