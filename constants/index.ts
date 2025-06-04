@@ -63,4 +63,12 @@ const dummyCards = [
   },
 ];
 
-export { ICONS, dummyCards };
+const BUNNY = {
+  STREAM_BASE_URL: "https://video.bunnycdn.com/library",
+  STORAGE_BASE_URL: "https://storage.bunnycdn.com/oren-vs",
+  CDN_URL: "https://oren-vs.b-cdn.net",
+  EMBED_URL: "https://iframe.mediadelivery.net/embed",
+  TRANSCRIPT_URL: "https://vz-d67a3603-ea9.b-cdn.net",
+};
+
+export { ICONS, dummyCards, BUNNY };
