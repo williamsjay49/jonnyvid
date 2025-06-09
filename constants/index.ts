@@ -62,7 +62,7 @@ const dummyCards = [
     visibility: "unlisted",
   },
 ];
-
+export const visibilities: Visibility[] = ["public", "private"];
 const BUNNY = {
   STREAM_BASE_URL: "https://video.bunnycdn.com/library",
   STORAGE_BASE_URL: "https://storage.bunnycdn.com/oren-vs",
@@ -71,4 +71,30 @@ const BUNNY = {
   TRANSCRIPT_URL: "https://vz-d67a3603-ea9.b-cdn.net",
 };
 
+export const filterOptions = [
+  "Most Viewed",
+  "Most Recent",
+  "Oldest First",
+  "Least Viewed",
+];
+export const initialVideoState = {
+  isLoaded: false,
+  hasIncrementedView: false,
+  isProcessing: true,
+  processingProgress: 0,
+};
+
+export const infos = ["transcript", "metadata"];
+
+export const DEFAULT_VIDEO_CONFIG = {
+  width: { ideal: 1920 },
+  height: { ideal: 1080 },
+  frameRate: { ideal: 30 },
+};
+
+export const DEFAULT_RECORDING_CONFIG = {
+  mimeType: "video/webm;codecs=vp9,opus",
+  audioBitsPerSecond: 128000,
+  videoBitsPerSecond: 2500000,
+};
 export { ICONS, dummyCards, BUNNY };
